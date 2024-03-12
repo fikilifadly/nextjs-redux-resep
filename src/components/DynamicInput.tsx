@@ -133,10 +133,10 @@ const DynamicInput = () => {
 			</div>
 			{containerCara.map((cara: string, i: number) => (
 				<div className="flex flex-col justify-center my-3" key={i}>
-					<div className="flex gap-10 justify-between">
+					<div className="flex justify-between">
 						{i === containerCara.length - 1 ? (
-							<div className="flex w-full gap-10">
-								<div id="cara" key={i}>
+							<div className="flex w-full">
+								<div id="cara" className="w-full" key={i}>
 									<input
 										onKeyUp={(event) => {
 											event.preventDefault();
